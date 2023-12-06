@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>PROVA CONSOLE</title>
 </head>
 <body>
-    <div class="container">
-        <button id="butt">invia messaggio nella console</button>
-        <button id="rs">invia messaggio nella console</button>
+    <div id="score-timer-container">
+        <div id="score">Punteggio: 0</div>
+        <div id="timer">Tempo: 5</div>
     </div>
-        
+    
+    <div id="game-container">
+        <button class="button" style="background-color: red;" onclick="checkAnswer(this)">
+            <span id="buttonText1">Rosso</span>
+        </button>
+        <button class="button" style="background-color: yellow;" onclick="checkAnswer(this)">
+            <span id="buttonText2">Giallo</span>
+        </button>
+        <button class="button" style="background-color: blue;" onclick="checkAnswer(this)">
+            <span id="buttonText3">Blu</span>
+        </button>
+        <button class="button" style="background-color: green;" onclick="checkAnswer(this)">
+            <span id="buttonText4">Verde</span>
+        </button>
+        <button class="button" style="background-color: orange;" onclick="checkAnswer(this)">
+            <span id="buttonText5">Arancione</span>
+        </button>
+        <button class="button" style="background-color: purple;" onclick="checkAnswer(this)">
+            <span id="buttonText6">Viola</span>
+        </button>
+    </div>
+    
+    <div id="button-container">
+        <button id="start-btn" onclick="startGame()">Inizia il gioco</button>
+        <button id="reset-btn" onclick="resetGame()">Ricomincia</button>
+    </div>
     
     <script src="script.js"></script>
 </body>
